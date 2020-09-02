@@ -1,0 +1,137 @@
+// Main Functions
+
+- Item Management
+	-Brands / Category / Subcategory
+	-brand
+		-1 | b1 | photo
+		-2 | b2 | photo
+	-category
+		-1 | fashion | photo
+		-2 | electronic | photo
+	-subcategorys
+		-1 | baby wear | 1
+
+-Sell / Shopping
+
+-Order Management
+	-items / customer
+	-orders / orders_detail
+	-orders
+		-voucherid,user_id,order_date,status
+	-orders_details
+		-voucherid,product_id,qty
+
+-Customer Manage
+	-Reports
+
+Model Relationship
+-----------------
+ -one - to -one
+ 	-hasOne(parent)
+ 	-belongTo(child)
+
+ -one-to-many
+ 	-hasMany(parent)
+ 	-belongsTo(child)
+-many-to-many
+no parent and child
+	-belongs ToMany
+	consist both 2 tables id 
+	-pivot table
+
+
+Home Work (using backend template)
+
+-create route for dashbord page(get)
+-create master blade(views/backendtemplate.blade.php)
+
+-create child balde(views/backend/dashbord.blade.php)
+-create controller BackendControl ler
+	-create method dashbordfun()
+	-call view (backend.dashbord)
+
+
+Item (CRUD)
+-----------
+- create  
+	-show from 
+	-store data
+- retrieve
+	-display data(all,row)
+- update
+	-show form  with old value
+	-update data
+- delete
+	-delete data
+
+
+Authentication
+-------------
+-installtion
+ -nodejs(call npm in termainl)
+-laravel qDocs
+ -Security /Authentication
+-Commands
+ -composer require laravel/ui
+ -php artisan ui bootstrap --auth
+ -npm install
+ -npm run dev
+-Routes
+ -localhost:8000/login
+ -localhost:8000/register
+
+ GIT
+ ---
+ -git init
+ -git add
+ -git commit -m "message"
+ -git remote add origin url
+ -git push -u orign master
+ -git pull
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
